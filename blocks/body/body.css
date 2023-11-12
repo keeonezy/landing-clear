@@ -435,6 +435,12 @@
   max-width: 1200px;
 }
 
+@media screen and (max-width: 1240px) {
+  .skills {
+    margin: 0 20px 0 20px;
+  }
+}
+
 .skills__cards {
   margin: 0;
   margin-top: 10px;
@@ -454,6 +460,12 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+
+@media screen and (max-width: 440px) {
+  .skills__card {
+    margin-bottom: 20px;
+  }
 }
 
 .skills__image {
@@ -900,6 +912,7 @@
 
 .popup__close {
   background: url("../../images/icon/popup-close.svg");
+  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   border: transparent;
