@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /*?__cf_chl_tk=
+Disallow: /*?__cf_chl_f_tk=
+Disallow: /*?__cf_chl_jschl_tk__=
+Disallow: /*?__cf_chl_managed_tk__=
+Disallow: /*?__cf_chl_captcha_tk__=
+Disallow: /*cdn-cgi/l/email-protection

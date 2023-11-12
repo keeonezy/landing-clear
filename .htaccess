@@ -1,0 +1,25 @@
+Options +MultiViews
+
+<Files connection.php>
+    deny from all
+</Files>
+
+
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{THE_REQUEST} " (/[^?/]+)\.html"
+RewriteRule ^ %1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/$ $1.html [L]
+
+
+#RewriteCond %{REQUEST_URI} !.(php|html?|jpg|gif)$
+#RewriteRule ^(.*)([^/])$ http://%{HTTP_HOST}/$1$2/ [L,R=301]
+
+#Разрешить вход на сайт определенному ip(если подключен CloudFlare)
+#RewriteCond %{HTTP:CF-Connecting-IP} !=100.45.203.224
+#RewriteRule ^ - [R=403,L]
+
+ErrorDocument 404 /404.php
