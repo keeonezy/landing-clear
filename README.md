@@ -5,4 +5,4 @@
 
 **Gh pages**
 
-https://keeonezy.github.io/jobOffer/
+https://keeonezy.github.io/landing-clear/
